@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <label>You should watch...</label>
+        <h1></h1>
+        <button onclick=nemClick()>Generate film</button>
+    </p>
+    <script>
+        let films = [
+            'Margin Call',
+            'Inside Job',
+            'The China Hustle',
+            'The Big Short',
+            'The Wizard of Lies',
+            'Starship Troopers',
+            'Wargames',
+            'Top Secret',
+            'Dr. Strangelove',
+            'Fantastic Mr.Fox',
+            // '',
+            // '',
+        ];
+        
+        const f = x => Math.floor(Math.random() * x)
+
+        function getRandomIndex(length) {
+            return Math.floor(Math.random() * length);
+        }
+        
+        function nemClick() {
+            //let index = getRandomIndex(films.length);
+            const index = f(films.length)
+            document.querySelector('h1').innerText = films[index];
+        }
+
+    </script>
+</body>
+</html>

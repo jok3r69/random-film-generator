@@ -12,9 +12,6 @@ let films = [
     'Wargames',
     'Top Secret',
     'Dr. Strangelove',
-    // '',
-    // '',
-    // '',
 ];
  
 function getRandomNumber(min, max) {
